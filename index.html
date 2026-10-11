@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Scissor Stone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-container">
+        <div class="badge">CLASSIC GAME</div>
+        <h1>🐍 Snake • Scissor • Stone 🪨</h1>
+        <p class="subtitle">Choose your move and challenge the computer!</p>
+
+        <section class="choices" aria-label="Choose your move">
+            <button class="choice-btn snake" id="snake" type="button">
+                <span class="emoji">🐍</span><span>Snake</span>
+            </button>
+            <button class="choice-btn scissor" id="scissor" type="button">
+                <span class="emoji">✂️</span><span>Scissor</span>
+            </button>
+            <button class="choice-btn stone" id="stone" type="button">
+                <span class="emoji">🪨</span><span>Stone</span>
+            </button>
+        </section>
+
+        <section class="result-card" aria-live="polite">
+            <h2>Round Result</h2>
+            <div class="choices-result">
+                <div><span class="label">YOU</span><p id="you-choice">-</p></div>
+                <div class="vs">VS</div>
+                <div><span class="label">COMPUTER</span><p id="computer-choice">-</p></div>
+            </div>
+            <p id="result" class="result neutral">Make your move!</p>
+        </section>
+
+        <section class="score-card" aria-label="Scores">
+            <div><span class="score-label">YOUR SCORE</span><strong id="your-score">0</strong></div>
+            <div class="divider" aria-hidden="true"></div>
+            <div><span class="score-label">COMPUTER</span><strong id="computer-score">0</strong></div>
+        </section>
+
+        <button id="reset" class="reset-btn" type="button">🔄 Reset Game</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
